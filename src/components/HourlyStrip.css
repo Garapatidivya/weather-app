@@ -1,0 +1,58 @@
+/* Hourly Strip Container */
+.hourly-strip-container {
+  margin-top: 2rem;
+  background: linear-gradient(to bottom, #e0f2fe, #bae6fd);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 90%; /* responsive */
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hourly-strip-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.hourly-strip-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1e3a8a;
+}
+
+/* Recharts Tooltip Styling */
+.recharts-tooltip-wrapper {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 0.5rem !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 0.875rem !important;
+  color: #111 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Axis Text Styling */
+.recharts-x-axis text,
+.recharts-y-axis text {
+  fill: #1e40af;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hourly-strip-container {
+    padding: 1.5rem;
+    width: 95%;
+  }
+
+  .hourly-strip-title {
+    font-size: 1.25rem;
+  }
+}

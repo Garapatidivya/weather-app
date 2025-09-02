@@ -1,0 +1,69 @@
+/* Details Card Container */
+.details-card-container {
+  margin-top: 2rem;
+  background-color: #f9fafb;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 90%; /* ensures responsiveness */
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Grid Layout */
+.details-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* Individual Detail Box */
+.detail-box {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.detail-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Titles */
+.detail-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+}
+
+/* Values */
+.detail-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+/* Explanations */
+.detail-explanation {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .details-card-container {
+    padding: 1.5rem;
+    width: 95%;
+  }
+
+  .detail-value {
+    font-size: 1.5rem;
+  }
+}
